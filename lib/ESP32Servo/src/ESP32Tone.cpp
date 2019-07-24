@@ -32,6 +32,7 @@ void noTone(int pin){
 	if (chan != NULL) {
 		if(chan->attached()) {
 			chan->detachPin(pin);
+			digitalWrite(pin, 1);
 		}
 	}
 }
